@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VISITANTE</title>
+<style>
+body {
+  background-color: #f19ff5; /* Azul marino oscuro */
+  font-family: sans-serif;
+  color: white; /* Texto blanco para contraste */
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d0d3d4 ; /* Azul SteelBlue, un poco más claro */
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #F0F8FF; /* Blanco casi puro para contraste */
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #00008B; /* Azul oscuro */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Control de Acceso de Visitante</h1>
+
+<form action="procesar_datos.php" method="post">
+
+  <label for="nombre">Nombre Completo:</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="procedencia">Procedencia:</label>
+  <input type="text" id="procedencia" name="procedencia" required>
+
+  <label for="area">Área a Visitar:</label>
+  <input type="text" id="area" name="area" required>
+
+  <label for="person">Persona que visita:</label>
+  <input type="text" id="person" name="person" required>
+  
+  <label for="asunto">Asunto:</label>
+  <input type="text" id="asunto" name="asunto" required>
+  
+  <label for="id">Identificacion:</label>
+  <input type="text" id="id" name="id" required>
+
+  <label for="horaen">Hora de Entrada:</label>
+  <input type="time" id="horaen" name="horaen" required>
+
+  <label for="horasa">Hora de Salida:</label>
+  <input type="time" id="horasa" name="horasa">
+
+  <input type="submit" value="Registrar">
+  <button onclick="location.href='paginainicial.html'">REGRESAR</button>
+
+</form>
+</body>
+</html>
